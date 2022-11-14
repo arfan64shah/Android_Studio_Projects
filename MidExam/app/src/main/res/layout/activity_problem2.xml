@@ -37,6 +37,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="147dp"
         android:layout_marginTop="169dp"
+        android:onClick="Add"
         android:text="Add" />
 
     <Button
@@ -48,6 +49,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="133dp"
         android:layout_marginTop="227dp"
+        android:onClick="Subtract"
         android:text="Difference" />
 
     <EditText

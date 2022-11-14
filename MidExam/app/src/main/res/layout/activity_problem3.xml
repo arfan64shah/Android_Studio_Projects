@@ -24,7 +24,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="120dp"
-        android:text="Convert To Binary" />
+        android:onClick="toDecimal"
+        android:text="Convert To Decimal" />
 
     <EditText
         android:id="@+id/editTextNumber7"

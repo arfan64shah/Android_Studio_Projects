@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class Problem1 extends AppCompatActivity {
     Button button7;
@@ -23,5 +24,20 @@ public class Problem1 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    public void Factorial(View v){
+        EditText et1 = (EditText) findViewById(R.id.editTextNumber);
+        EditText et2 = (EditText) findViewById(R.id.editTextNumber2);
+
+        int num = Integer.parseInt(et1.getText().toString());
+
+        int i, fact = 1;
+        for(i = 1; i <= num; i++){
+            fact = fact*i;
+        }
+
+
+        et2.setText("Factorial is: "+ fact);
     }
 }

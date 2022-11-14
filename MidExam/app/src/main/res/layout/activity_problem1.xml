@@ -25,6 +25,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="174dp"
+        android:onClick="Factorial"
         android:text="Calculate Factorial" />
 
     <EditText
