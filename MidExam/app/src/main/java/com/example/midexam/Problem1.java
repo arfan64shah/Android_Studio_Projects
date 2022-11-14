@@ -32,12 +32,15 @@ public class Problem1 extends AppCompatActivity {
 
         int num = Integer.parseInt(et1.getText().toString());
 
-        int i, fact = 1;
+        int i;
+        long fact = 1;
         for(i = 1; i <= num; i++){
             fact = fact*i;
         }
-
-
-        et2.setText("Factorial is: "+ fact);
+        if (num <= 20 && num >=0){
+            et2.setText("Factorial is: "+ fact);
+        }else {
+            et2.setText("Put numbers between 0 to 20");
+        }
     }
 }

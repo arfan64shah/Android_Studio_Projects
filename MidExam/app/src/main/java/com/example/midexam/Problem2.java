@@ -31,12 +31,12 @@ public class Problem2 extends AppCompatActivity {
         EditText et2 = (EditText) findViewById(R.id.editTextNumber4);
         EditText et3 = (EditText) findViewById(R.id.editTextNumber5);
 
-        int n1 = Integer.parseInt(et1.getText().toString());
-        int n2 = Integer.parseInt(et2.getText().toString());
+        double n1 = Double.parseDouble(et1.getText().toString());
+        double n2 = Double.parseDouble(et2.getText().toString());
 
-        int result = n1+n2;
+        double result = n1+n2;
 
-        et3.setText("Result: " + result);
+        et3.setText("Result: " + String.format("%.5f", result));
     }
 
     public void Subtract(View v){
@@ -44,11 +44,11 @@ public class Problem2 extends AppCompatActivity {
         EditText et2 = (EditText) findViewById(R.id.editTextNumber4);
         EditText et3 = (EditText) findViewById(R.id.editTextNumber5);
 
-        int n1 = Integer.parseInt(et1.getText().toString());
-        int n2 = Integer.parseInt(et2.getText().toString());
+        double n1 = Double.parseDouble(et1.getText().toString());
+        double n2 = Double.parseDouble(et2.getText().toString());
 
-        int result = n1-n2;
+        double result = n1-n2;
 
-        et3.setText("Result: " + result);
+        et3.setText("Result: " + String.format("%.5f", result));
     }
 }
