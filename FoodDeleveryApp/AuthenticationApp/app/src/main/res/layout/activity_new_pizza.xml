@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewPizza">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:text="Add the details of the new Pizza"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pizzaName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:hint="Name of the Pizza"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/pizzaPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:hint="Price Of The Pizza"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaUrl"
+        app:layout_constraintStart_toStartOf="@+id/pizzaUrl"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaUrl" />
+
+    <EditText
+        android:id="@+id/pizzaUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:hint="Url to an Image"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaName"
+        app:layout_constraintStart_toStartOf="@+id/pizzaName"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaName" />
+
+    <Button
+        android:id="@+id/addPizza"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="71dp"
+        android:text="Add to the pizza"
+        app:layout_constraintEnd_toEndOf="@+id/pizzaPrice"
+        app:layout_constraintStart_toStartOf="@+id/pizzaPrice"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaPrice" />
+</androidx.constraintlayout.widget.ConstraintLayout>

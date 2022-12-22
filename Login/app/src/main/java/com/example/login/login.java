@@ -40,7 +40,7 @@ public class login extends AppCompatActivity {
     }
 
     public void onClickRegisterFromLogin(View view) {
-        startActivity(new Intent(getApplicationContext(),register.class));
+        startActivity(new Intent(getApplicationContext(),MainActivity.class));
     }
 
     public void onClickLogin(View view) {

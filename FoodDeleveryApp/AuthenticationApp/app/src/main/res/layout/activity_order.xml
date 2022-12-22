@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity">
+
+    <TextView
+        android:id="@+id/bill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="15dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/delivaryAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:hint="Write Your Address"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/total"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/total"
+        app:layout_constraintTop_toBottomOf="@+id/total" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="352dp"
+        android:layout_marginRight="15dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/bill"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/bill"
+        app:layout_constraintTop_toBottomOf="@+id/bill" />
+
+    <Button
+        android:id="@+id/Order"
+        android:layout_width="352dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:text="Order"
+        app:layout_constraintEnd_toEndOf="@+id/delivaryAddress"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/delivaryAddress"
+        app:layout_constraintTop_toBottomOf="@+id/delivaryAddress" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
